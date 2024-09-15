@@ -1,3 +1,4 @@
+import 'package:brick_breaker/component/event_bus.dart';
 import 'package:flame_forge2d/flame_forge2d.dart';
 
 class Ball extends BodyComponent {
@@ -22,5 +23,14 @@ class Ball extends BodyComponent {
     body.createFixture(fixtureDef);
 
     return body;
+  }
+
+  @override
+  void update(double dt) {
+    super.update(dt);
+    if (body.position.y > 7.4) {
+      EventBus().publish(ballOutEvent);
+      removeFromParent();
+    }
   }
 }

@@ -37,7 +37,7 @@ class MainMenuPage extends PositionComponent {
       ),
       onTapUpEvent: () {
         removeFromParent();
-        EventBus().publish('gamePageEvent', null);
+        EventBus().publish(gamePageEvent, null);
         // EventBus를 통해 게임 페이지로 이동
       },
     );

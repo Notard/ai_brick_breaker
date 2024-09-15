@@ -1,5 +1,10 @@
 const String mainMenuEvent = 'MainMenu';
 const String gamePageEvent = 'gamePage';
+const String paddleMoveEvent = 'paddleMove';
+const String ballOutEvent = 'ballOut';
+const String brickCollisionEvent = 'brickCollision';
+const String gameClearEvent = 'gameClear';
+const String cameraZoomEvent = 'cameraZoom';
 
 class EventBus {
   static final EventBus _instance = EventBus._internal();
@@ -22,7 +27,7 @@ class EventBus {
   void publish(String eventName, [dynamic data]) {
     if (_listeners.containsKey(eventName)) {
       for (var callback in _listeners[eventName]!) {
-        callback(data);
+        callback(data); // 데이터를 전달하여 호출
       }
     }
   }

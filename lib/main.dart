@@ -1,6 +1,7 @@
+import 'package:brick_breaker/world/break_brick_camera.dart';
+import 'package:brick_breaker/world/break_brick_frame.dart';
 import 'package:brick_breaker/world/break_brick_world.dart';
 import 'package:flame/camera.dart';
-import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
 import 'package:flame/game.dart';
 
@@ -9,9 +10,9 @@ void main() {
 
   runApp(
     GameWidget(
-      game: FlameGame(
+      game: BreakBrickFrame(
         world: BreakBrickWorld(),
-        camera: CameraComponent(
+        camera: BreakBrickCamera(
           viewport: FixedResolutionViewport(
             resolution: Vector2(1080, 1920),
           ),

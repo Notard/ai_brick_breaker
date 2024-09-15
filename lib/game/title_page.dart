@@ -66,8 +66,7 @@ class TitlePage extends PositionComponent {
     fadeOut.onComplete = () {
       if (removeAfterFadeOut) {
         removeFromParent();
-        EventBus().publish('mainMenuEvent', null);
-        // EventBus를 통해 메인메뉴 페이지로 이동
+        EventBus().publish(mainMenuEvent, null);
       }
     };
   }
