@@ -51,14 +51,14 @@ class TitlePage extends PositionComponent {
   void setFadeEffect(PositionComponent component, bool removeAfterFadeOut) {
     OpacityEffect fadeIn = OpacityEffect.to(
       1.0,
-      EffectController(duration: 0.3),
+      EffectController(duration: 3),
     );
 
     OpacityEffect fadeOut = OpacityEffect.to(
       0.0,
       DelayedEffectController(
         delay: 0.1,
-        EffectController(duration: 0.3),
+        EffectController(duration: 3),
       ),
     );
     SequenceEffect fadeInOutSequence = SequenceEffect([fadeIn, fadeOut]);

@@ -9,7 +9,6 @@ import 'package:brick_breaker/game/wall.dart';
 import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flame_forge2d/flame_forge2d.dart';
-import 'package:flutter/material.dart';
 
 class GamePage extends Forge2DGame with TapCallbacks {
   GamePage() : super(contactListener: GameContactListener());
