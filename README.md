@@ -1,6 +1,10 @@
 # brick_breaker
 
-A new Flutter project.
+교보: https://product.kyobobook.co.kr/detail/S000219487630
+
+알라딘: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=388348381
+
+예스24: https://www.yes24.com/product/goods/182707746
 
 ## Getting Started
 
